@@ -1,0 +1,6 @@
+com/example/microservice/customer/service/web/CustomerDto.class
+com/example/microservice/customer/service/services/CustomerService.class
+com/example/microservice/customer/service/web/CustomerController.class
+com/example/microservice/customer/service/repo/CustomerRepository.class
+com/example/microservice/customer/service/CustomerServiceApplication.class
+com/example/microservice/customer/service/domain/Customer.class
