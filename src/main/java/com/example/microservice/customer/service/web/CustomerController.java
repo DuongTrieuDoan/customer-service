@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 @RestController
 public class CustomerController {
-   CustomerService customerService;
+   private CustomerService customerService;
 
     @Autowired
     public CustomerController(CustomerService customerService) {
@@ -26,7 +26,7 @@ public class CustomerController {
         return customerService.verifyById(id);
     }
 
-    @GetMapping(path = "/customers/{id}/search")
+    @GetMapping(path = "/customers/{id}")
     @ResponseBody
     public CustomerDto findById(@PathVariable String id){
         Customer customer = customerService.findById(id);
@@ -37,6 +37,14 @@ public class CustomerController {
     @ResponseWrapper
     public List<CustomerDto> findByName(@PathVariable String name){
         return customerService.findByName(name).stream()
+                              .map(customer -> new CustomerDto(customer.getId(), customer.getName()))
+                              .collect(Collectors.toList());
+    }
+
+    @GetMapping(path = "/customers")
+    @ResponseWrapper
+    public List<CustomerDto> findAll(){
+        return customerService.findAll().stream()
                               .map(customer -> new CustomerDto(customer.getId(), customer.getName()))
                               .collect(Collectors.toList());
     }

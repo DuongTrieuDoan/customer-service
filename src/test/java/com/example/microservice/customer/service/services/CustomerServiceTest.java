@@ -98,6 +98,14 @@ public class CustomerServiceTest {
     }
 
     @Test
+    public void findAll_whenNotFound_returnCustomerList() {
+        List<Customer> result = customerService.findAll();
+
+        assertThat(result.isEmpty(), is(false));
+        assertThat(result.get(0).equals(customer), is(true));
+    }
+
+    @Test
     public void findByName_whenNotFound_returnEmptyList() {
         when(customerRepository.findAll()).thenReturn(Collections.EMPTY_LIST);
         List<Customer> result = customerService.findByName(name);
