@@ -126,7 +126,7 @@ public class CustomerServiceTest {
 
     @Test
     public void save_withCustomer_saveCustomer(){
-        customerService.create(customer);
+        customerService.save(customer);
 
         verify(customerRepository).save(customerArgumentCaptor.capture());
 

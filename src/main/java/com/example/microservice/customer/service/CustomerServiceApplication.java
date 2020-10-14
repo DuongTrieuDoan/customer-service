@@ -19,10 +19,10 @@ public class CustomerServiceApplication implements CommandLineRunner {
 
 	@Override
     public void run(String... strings) throws Exception{
-	    customerService.create(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
-	    customerService.create(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
-	    customerService.create(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
-	    customerService.create(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
+	    customerService.save(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
+	    customerService.save(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
+	    customerService.save(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
+	    customerService.save(new Customer(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
 
 	    customerService.findAll().stream().forEach(customer -> System.out.println(customer));
     }

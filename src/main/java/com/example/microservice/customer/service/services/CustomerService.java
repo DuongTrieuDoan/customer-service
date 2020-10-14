@@ -40,13 +40,13 @@ public class CustomerService {
                             .collect(Collectors.toList());
     }
 
-    public void save(List<Customer> customers){
+    public  List<Customer> save(List<Customer> customers){
         Iterable<Customer> customerIterable = customers;
-        customerRepository.saveAll(customerIterable);
+        return StreamSupport.stream(customerRepository.saveAll(customerIterable).spliterator(), false)
+                            .collect(Collectors.toList());
     }
 
-    public Customer create(Customer customer){
-        customerRepository.save(customer);
-        return customer;
+    public Customer save(Customer customer){
+        return customerRepository.save(customer);
     }
 }

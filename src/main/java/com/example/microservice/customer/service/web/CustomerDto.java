@@ -1,5 +1,7 @@
 package com.example.microservice.customer.service.web;
 
+import com.example.microservice.customer.service.domain.Customer;
+
 public class CustomerDto {
     private String id;
     private String name;
@@ -25,5 +27,9 @@ public class CustomerDto {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Customer toDomain() {
+        return new Customer(this.id, this.name);
     }
 }

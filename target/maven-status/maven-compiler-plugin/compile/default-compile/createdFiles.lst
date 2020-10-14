@@ -7,4 +7,5 @@ com/example/microservice/customer/service/CustomerServiceApplication.class
 com/example/microservice/customer/service/domain/Customer.class
 com/example/microservice/customer/service/domain/errorHandlers/RestExceptionHandler.class
 com/example/microservice/customer/service/domain/errorHandlers/ApiError.class
+com/example/microservice/customer/service/web/CreateCustomerDto.class
 com/example/microservice/customer/service/domain/errorHandlers/ApiValidationError.class
