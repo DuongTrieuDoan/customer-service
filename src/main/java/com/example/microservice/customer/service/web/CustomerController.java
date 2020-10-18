@@ -2,6 +2,7 @@ package com.example.microservice.customer.service.web;
 
 import com.example.microservice.customer.service.domain.Customer;
 import com.example.microservice.customer.service.services.CustomerService;
+import com.example.microservice.customer.service.services.MessageQueueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,10 +19,12 @@ import java.util.stream.Collectors;
 @RestController
 public class CustomerController {
    private CustomerService customerService;
+   private MessageQueueService messageQueueService;
 
     @Autowired
-    public CustomerController(CustomerService customerService) {
+    public CustomerController(CustomerService customerService, MessageQueueService messageQueueService) {
         this.customerService = customerService;
+        this.messageQueueService = messageQueueService;
     }
 
     @GetMapping(path = "/customers/verify/{id}")
@@ -64,5 +67,10 @@ public class CustomerController {
     public CustomerDto update(@RequestBody CustomerDto customerDto){
         Customer customer = customerService.save(customerDto.toDomain());
         return new CustomerDto(customer.getId(), customer.getName());
+    }
+
+    @GetMapping("receive")
+    public void receiveMqMessage() throws Exception{
+        messageQueueService.receiveOrderMessage();
     }
 }

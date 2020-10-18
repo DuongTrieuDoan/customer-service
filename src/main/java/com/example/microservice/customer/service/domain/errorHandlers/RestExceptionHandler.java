@@ -36,4 +36,10 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
         return buildResponseEntity(apiError);
     }
 
+    @ExceptionHandler(MqException.class)
+    protected ResponseEntity<Object> handleMQException(MqException ex){
+        ApiError apiError = new ApiError(HttpStatus.EXPECTATION_FAILED);
+        apiError.setMessage(ex.getMessage());
+        return buildResponseEntity(apiError);
+    }
 }
