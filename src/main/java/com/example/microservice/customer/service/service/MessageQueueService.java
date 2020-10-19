@@ -1,6 +1,6 @@
 package com.example.microservice.customer.service.service;
 
-import com.example.microservice.customer.service.domain.errorHandlers.MqException;
+import com.example.microservice.customer.service.exception.MqException;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;

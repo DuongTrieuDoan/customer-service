@@ -1,4 +1,4 @@
-package com.example.microservice.customer.service.domain.errorHandlers;
+package com.example.microservice.customer.service.exception;
 
 public class MqException extends RuntimeException {
     String message;

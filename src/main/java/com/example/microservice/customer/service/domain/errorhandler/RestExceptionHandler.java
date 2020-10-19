@@ -1,5 +1,6 @@
-package com.example.microservice.customer.service.domain.errorHandlers;
+package com.example.microservice.customer.service.domain.errorhandler;
 
+import com.example.microservice.customer.service.exception.MqException;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpHeaders;

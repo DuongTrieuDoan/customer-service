@@ -1,2 +1,2 @@
 com/example/microservice/customer/service/CustomerServiceApplicationTests.class
-com/example/microservice/customer/service/services/CustomerServiceTest.class
+com/example/microservice/customer/service/service/CustomerServiceTest.class

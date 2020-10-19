@@ -1,4 +1,4 @@
-package com.example.microservice.customer.service.domain.errorHandlers;
+package com.example.microservice.customer.service.domain.errorhandler;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.http.HttpStatus;

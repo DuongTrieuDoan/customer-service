@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="849f5b65-9b90-4a49-b09b-fba04767110a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/services/MessageQueueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/services/MessageQueueService.java" afterDir="false" />
-    </list>
+    <list default="true" id="849f5b65-9b90-4a49-b09b-fba04767110a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +24,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/services/CustomerService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/service/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
               <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
@@ -40,7 +38,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/web/CustomerController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="796">
               <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
@@ -78,7 +76,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/microservice/customer/service/services/CustomerServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/microservice/customer/service/service/CustomerServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="827">
               <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
@@ -96,10 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/services/MessageQueueService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/service/MessageQueueService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+            <state relative-caret-position="210">
+              <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/CustomerServiceApplication.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/services/MessageQueueService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/service/MessageQueueService.java" />
       </list>
     </option>
   </component>
@@ -240,6 +239,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="customer-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -268,16 +276,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="customer-service" type="b2602c69:ProjectViewProjectNode" />
@@ -314,7 +313,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="customer-service" type="b2602c69:ProjectViewProjectNode" />
@@ -340,7 +339,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603068802837" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603074960318" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -397,12 +396,12 @@
       <module name="customer-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.microservice.customer.service.services.*" />
+          <option name="PATTERN" value="com.example.microservice.customer.service.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.microservice.customer.service.services" />
-      <option name="MAIN_CLASS_NAME" value="com.example.microservice.customer.service.services.CustomerServiceTest" />
+      <option name="PACKAGE_NAME" value="com.example.microservice.customer.service.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.microservice.customer.service.service.CustomerServiceTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -411,12 +410,12 @@
       <module name="customer-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.microservice.customer.service.services.*" />
+          <option name="PATTERN" value="com.example.microservice.customer.service.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.microservice.customer.service.services" />
-      <option name="MAIN_CLASS_NAME" value="com.example.microservice.customer.service.services.CustomerServiceTest" />
+      <option name="PACKAGE_NAME" value="com.example.microservice.customer.service.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.microservice.customer.service.service.CustomerServiceTest" />
       <option name="METHOD_NAME" value="findAll_whenNotFound_returnCustomerList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -427,12 +426,12 @@
       <module name="customer-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.microservice.customer.service.services.*" />
+          <option name="PATTERN" value="com.example.microservice.customer.service.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.microservice.customer.service.services" />
-      <option name="MAIN_CLASS_NAME" value="com.example.microservice.customer.service.services.CustomerServiceTest" />
+      <option name="PACKAGE_NAME" value="com.example.microservice.customer.service.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.microservice.customer.service.service.CustomerServiceTest" />
       <option name="METHOD_NAME" value="findAll_whenNotFound_returnEmptyList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -485,7 +484,7 @@
       <workItem from="1600351384590" duration="26766000" />
       <workItem from="1600916000626" duration="758000" />
       <workItem from="1601916363301" duration="8801000" />
-      <workItem from="1602642355366" duration="16764000" />
+      <workItem from="1602642355366" duration="17524000" />
     </task>
     <servers />
   </component>
@@ -522,7 +521,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53089000" />
+    <option name="totallyTimeSpent" value="53849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
@@ -654,7 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/web/CreateCustomerDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/controller/CreateCustomerDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
@@ -677,7 +676,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/web/CustomerDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/controller/CustomerDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-195">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
@@ -688,7 +687,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/microservice/customer/service/services/CustomerServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/microservice/customer/service/service/CustomerServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="827">
           <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
@@ -712,7 +711,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/services/CustomerService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
@@ -734,7 +733,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/web/CustomerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="796">
           <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
@@ -777,10 +776,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/services/MessageQueueService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/microservice/customer/service/service/MessageQueueService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        <state relative-caret-position="210">
+          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
