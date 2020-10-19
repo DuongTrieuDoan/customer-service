@@ -1,4 +1,4 @@
-package com.example.microservice.customer.service.services;
+package com.example.microservice.customer.service.service;
 
 import com.example.microservice.customer.service.domain.errorHandlers.MqException;
 import com.rabbitmq.client.Channel;
@@ -28,7 +28,7 @@ public class MessageQueueService {
             channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> {
             });
         } catch (Exception e) {
-            throw new MqException("Error MQ integration");
+            throw new MqException(" [x] Error MQ integration");
         }
     }
 }

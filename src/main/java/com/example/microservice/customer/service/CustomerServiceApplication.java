@@ -1,8 +1,8 @@
 package com.example.microservice.customer.service;
 
 import com.example.microservice.customer.service.domain.Customer;
-import com.example.microservice.customer.service.services.CustomerService;
-import com.example.microservice.customer.service.services.MessageQueueService;
+import com.example.microservice.customer.service.service.CustomerService;
+import com.example.microservice.customer.service.service.MessageQueueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

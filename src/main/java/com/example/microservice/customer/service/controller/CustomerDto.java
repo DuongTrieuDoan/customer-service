@@ -1,4 +1,4 @@
-package com.example.microservice.customer.service.web;
+package com.example.microservice.customer.service.controller;
 
 import com.example.microservice.customer.service.domain.Customer;
 

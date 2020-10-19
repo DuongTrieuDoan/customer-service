@@ -1,8 +1,8 @@
-package com.example.microservice.customer.service.web;
+package com.example.microservice.customer.service.controller;
 
 import com.example.microservice.customer.service.domain.Customer;
-import com.example.microservice.customer.service.services.CustomerService;
-import com.example.microservice.customer.service.services.MessageQueueService;
+import com.example.microservice.customer.service.service.CustomerService;
+import com.example.microservice.customer.service.service.MessageQueueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
