@@ -1,6 +1,5 @@
 package com.example.microservice.customer.service.domain.errorhandler;
 
-import com.example.microservice.customer.service.exception.MqException;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpHeaders;
@@ -33,13 +32,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(EntityNotFoundException.class)
     protected ResponseEntity<Object> handleEntityNotFound(EntityNotFoundException ex) {
         ApiError apiError = new ApiError(NOT_FOUND);
-        apiError.setMessage(ex.getMessage());
-        return buildResponseEntity(apiError);
-    }
-
-    @ExceptionHandler(MqException.class)
-    protected ResponseEntity<Object> handleMQException(MqException ex){
-        ApiError apiError = new ApiError(HttpStatus.EXPECTATION_FAILED);
         apiError.setMessage(ex.getMessage());
         return buildResponseEntity(apiError);
     }

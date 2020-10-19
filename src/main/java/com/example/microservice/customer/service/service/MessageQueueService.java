@@ -1,6 +1,5 @@
 package com.example.microservice.customer.service.service;
 
-import com.example.microservice.customer.service.exception.MqException;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -11,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class MessageQueueService {
     private final static String QUEUE_NAME = "send_customer_order_confirmation";
 
-    public void receiveOrderMessage() throws MqException{
+    public void receiveOrderMessage() {
         try {
             ConnectionFactory factory = new ConnectionFactory();
             factory.setHost("localhost");
@@ -28,7 +27,7 @@ public class MessageQueueService {
             channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> {
             });
         } catch (Exception e) {
-            throw new MqException(" [x] Error MQ integration");
+            System.out.println(e.getMessage());
         }
     }
 }
