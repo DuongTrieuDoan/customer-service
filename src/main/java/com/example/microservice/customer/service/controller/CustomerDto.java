@@ -1,6 +1,6 @@
 package com.example.microservice.customer.service.controller;
 
-import com.example.microservice.customer.service.domain.Customer;
+import com.example.microservice.customer.service.model.Customer;
 
 public class CustomerDto {
     private String id;

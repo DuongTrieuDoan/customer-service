@@ -1,4 +1,4 @@
-package com.example.microservice.customer.service.domain.errorhandler;
+package com.example.microservice.customer.service.errorhandler;
 
 abstract class ApiSubError {
 

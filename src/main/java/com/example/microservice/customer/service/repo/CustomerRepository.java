@@ -1,6 +1,6 @@
 package com.example.microservice.customer.service.repo;
 
-import com.example.microservice.customer.service.domain.Customer;
+import com.example.microservice.customer.service.model.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

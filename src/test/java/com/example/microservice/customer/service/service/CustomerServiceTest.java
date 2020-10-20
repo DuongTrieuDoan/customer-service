@@ -1,6 +1,6 @@
 package com.example.microservice.customer.service.service;
 
-import com.example.microservice.customer.service.domain.Customer;
+import com.example.microservice.customer.service.model.Customer;
 import com.example.microservice.customer.service.repo.CustomerRepository;
 import org.assertj.core.util.Lists;
 import org.junit.Before;

@@ -1,6 +1,6 @@
 package com.example.microservice.customer.service;
 
-import com.example.microservice.customer.service.domain.Customer;
+import com.example.microservice.customer.service.model.Customer;
 import com.example.microservice.customer.service.service.CustomerService;
 import com.example.microservice.customer.service.service.MessageQueueService;
 import org.springframework.beans.factory.annotation.Autowired;

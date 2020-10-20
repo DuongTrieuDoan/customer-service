@@ -1,4 +1,4 @@
-package com.example.microservice.customer.service.domain;
+package com.example.microservice.customer.service.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

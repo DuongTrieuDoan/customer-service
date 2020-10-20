@@ -1,11 +1,11 @@
 /Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/controller/CustomerController.java
-/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/domain/Customer.java
-/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/domain/errorhandler/ApiError.java
+/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/model/Customer.java
+/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/errorhandler/ApiError.java
 /Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/controller/CustomerDto.java
 /Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/service/MessageQueueService.java
 /Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/service/CustomerService.java
 /Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/repo/CustomerRepository.java
 /Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/CustomerServiceApplication.java
+/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/errorhandler/RestExceptionHandler.java
 /Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/controller/CreateCustomerDto.java
-/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/domain/errorhandler/RestExceptionHandler.java
-/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/domain/errorhandler/ApiSubError.java
+/Users/tranthituongvi/Documents/GitHub/customer-service/src/main/java/com/example/microservice/customer/service/errorhandler/ApiSubError.java
