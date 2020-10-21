@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Collections;
 import java.util.UUID;
 
 @SpringBootApplication
@@ -18,7 +19,9 @@ public class CustomerServiceApplication implements CommandLineRunner {
     private MessageQueueService messageQueueService;
 
 	public static void main(String[] args) {
-		SpringApplication.run(CustomerServiceApplication.class, args);
+        SpringApplication app = new SpringApplication(CustomerServiceApplication.class);
+        app.setDefaultProperties(Collections.singletonMap("server.port", "9090"));
+        app.run(args);
 	}
 
 	@Override
