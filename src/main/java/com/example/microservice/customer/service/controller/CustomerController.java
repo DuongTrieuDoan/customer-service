@@ -70,7 +70,7 @@ public class CustomerController {
     }
 
     @GetMapping("receive")
-    public void receiveMqMessage() throws Exception{
+    public void receiveMqMessage() {
         messageQueueService.receiveOrderMessage();
     }
 }
